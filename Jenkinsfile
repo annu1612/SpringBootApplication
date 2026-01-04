@@ -10,12 +10,12 @@ pipeline {
                 bat 'mvn clean install'
                 }
         }
-        stage('Build Docker Image'){
+       /* stage('Build Docker Image'){
             steps{
                script{
                    bat 'docker build -t spring-boot-docker .'
                }
             }
-        }
+        }*/
     }
 }
