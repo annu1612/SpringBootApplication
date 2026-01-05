@@ -13,7 +13,7 @@ pipeline {
          stage('Build Docker Image'){
             steps{
                script{
-                   sh 'docker build -t spring-boot-docker.jar .'
+                   bat 'docker build -t spring-boot-docker.jar .'
                }
             }
         }
